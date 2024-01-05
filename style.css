@@ -1,49 +1,108 @@
+/* INICIO ESTILO HEADER */
+
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f4ef;
 }
 header{
-    background-color: #16c64f;
-    height: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0px 10%;
     align-items: center;
-}
-.nav-container{
-    display: flex;
-    padding: 0px 6rem;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-}
-.img-logo{
-    margin: 0px 40px;
+    background-color: 	#a090fa;
+    border-radius: 8px;
+    padding: 0px 6px;
 }
 
-.nav-items{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.img-logo{
+    margin: 2px 2px;
 }
-a{
+
+.navbar li, a{
     text-decoration: none;
+    color:  white;
+    font-weight: 500;
 }
-ul li{
-    list-style: none;
+
+.navbar li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.navbar-direita li{
+    display: inline-block;
+    margin: 0px 5px;
+}
+/* FIM ESTILO HEADER */
+
+/* INICIO ESTILO MAIN*/
+.container{
+    margin: 0px 10%;
+    height: 98vh;
+}
+
+.inicio{
+    width: 100%;
+    background-color: #fefdf9;
+    padding: 20px;
+}
+
+.inicio{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.card-inicio{
+    width: 50%;
+    border-right: 1px solid rgb(219, 216, 216);
+}
+.card-inicio a{
+    color: grey;
+    margin-top: 20px;
     
 }
-.nav-items-direita{
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
+.card-welcome{
+    margin-bottom: 30px;
 }
 
-.links-ancor{
-    color: rgb(207, 207, 207);
-    font-size: 16px;
-    font-weight: 600;
-    padding: 10px 0px;
+.card-inicio p:nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
 }
-.fa-solid{
-color: white;
+
+#report{
+    align-self: center;
+}
+#report:first-child(){
+    margin-right: 10px;
+}
+
+.financas{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card-financeiro{
+    border: 1px solid rgb(235, 235, 235);
+    padding: 6px 30px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+.financas .card-financeiro.receita h3 {
+    color: green;
+}
+
+.financas .card-financeiro.despesa h3 {
+    color: red;
 }
